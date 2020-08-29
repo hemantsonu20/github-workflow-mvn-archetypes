@@ -1,2 +1,2 @@
 # github-workflow-mvn-archetypes
-Maven Archetypes for java applications with configured github workflow
+Maven Archetypes for java based projects with configured github workflow.

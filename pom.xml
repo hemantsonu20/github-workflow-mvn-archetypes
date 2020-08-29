@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.hemantsonu20</groupId>
+  <artifactId>github-workflow-mvn-archetypes</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>github-workflow-mvn-archetypes</name>
+  <description>Maven Archetypes for java based projects with configured github workflow</description>
+  <url>https://github.com/hemantsonu20/github-workflow-mvn-archetypes</url>
+
+  <parent>
+      <groupId>com.github.hemantsonu20</groupId>
+      <artifactId>hemantsonu-parent</artifactId>
+      <version>1.0.4</version>
+  </parent>
+
+  <properties>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven.archetype.packaging.version>3.2.0</maven.archetype.packaging.version>
+  </properties>
+
+  <scm>
+    <connection>scm:git:git@github.com:hemantsonu20/github-workflow-mvn-archetypes.git</connection>
+    <developerConnection>scm:git:git@github.com:hemantsonu20/github-workflow-mvn-archetypes.git</developerConnection>
+    <tag>${project.version}</tag>
+    <url>https://github.com/hemantsonu20/github-workflow-mvn-archetypes</url>
+  </scm>
+
+  <build>
+    <pluginManagement>
+      <!-- TODO remove not required -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.7.1</version>
+        </plugin>
+
+
+
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.archetype</groupId>
+        <artifactId>archetype-packaging</artifactId>
+        <version>${maven.archetype.packaging.version}</version>
+      </extension>
+    </extensions>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>dependency-info</report>
+              <report>distribution-management</report>
+              <report>index</report>
+              <report>issue-management</report>
+              <report>licenses</report>
+              <report>plugin-management</report>
+              <report>plugins</report>
+              <report>team</report>
+              <report>scm</report>
+              <report>summary</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <modules>
+      <module>github-workflow-java-archetype</module>
+  </modules>
+
+</project>

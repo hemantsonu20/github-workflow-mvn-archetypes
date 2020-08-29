@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+    xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
+    xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    name="github-workflow-java">
+
+  <requiredProperties>
+    <requiredProperty key="GithubOrgOrAccount" />
+    <requiredProperty key="version">
+      <defaultValue>1.0.0-SNAPSHOT</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+
+    <!-- src/main folder contents    -->
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/main/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true">
+      <directory>src/main/resources</directory>
+      <includes>
+        <include>**/*.properties</include>
+        <include>**/*.yml</include>
+      </includes>
+    </fileSet>
+
+    <!-- src/test folder contents    -->
+    <fileSet filtered="true" packaged="true" encoding="UTF-8">
+      <directory>src/test/java</directory>
+      <includes>
+        <include>**/*.java</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true">
+      <directory>src/test/resources</directory>
+      <includes>
+        <include>**/*.properties</include>
+        <include>**/*.yml</include>
+      </includes>
+    </fileSet>
+
+    <!-- github workflow files    -->
+    <fileSet filtered="true">
+      <directory>.github/workflows</directory>
+      <includes>
+        <include>**/*.yml</include>
+      </includes>
+    </fileSet>
+
+    <!-- README.MD file  -->
+    <fileSet filtered="true">
+      <directory/>
+      <includes>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+
+    <!-- java.gitignore LICENSE files  -->
+    <fileSet>
+      <directory/>
+      <includes>
+        <include>java.gitignore</include>
+        <include>LICENSE</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+
+</archetype-descriptor>

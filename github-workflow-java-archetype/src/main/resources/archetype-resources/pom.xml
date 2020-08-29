@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>${groupId}</groupId>
+  <artifactId>${artifactId}</artifactId>
+  <version>${version}</version>
+  <packaging>jar</packaging>
+
+  <name>${artifactId}</name>
+  <description>A sample java application</description>
+  <url>https://github.com/${GithubOrgOrAccount}/${artifactId}</url>
+
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <maven.compiler.source>${java.version}</maven.compiler.source>
+    <maven.compiler.target>${java.version}</maven.compiler.target>
+    <maven.source.plugin.version>3.2.0</maven.source.plugin.version>
+    <maven.javadoc.plugin.version>3.2.0</maven.javadoc.plugin.version>
+  </properties>
+
+  <scm>
+    <connection>scm:git:git@github.com:${GithubOrgOrAccount}/${artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:${GithubOrgOrAccount}/${artifactId}.git</developerConnection>
+    <tag>HEAD</tag>
+    <url>https://github.com/${GithubOrgOrAccount}/${artifactId}</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <!-- TODO Update name and email -->
+      <name>${GithubOrgOrAccount}</name>
+      <email>${GithubOrgOrAccount}@gmail.com</email>
+      <organization>${GithubOrgOrAccount}</organization>
+      <organizationUrl>https://github.com/${GithubOrgOrAccount}</organizationUrl>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <system>GitHub Issue Management</system>
+    <url>https://github.com/${GithubOrgOrAccount}/${artifactId}/issues</url>
+  </issueManagement>
+
+  <build>
+    <plugins>
+
+      <!-- To create sources jar -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>${maven.source.plugin.version}</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- To create javadoc jar -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>${maven.javadoc.plugin.version}</version>
+        <executions>
+          <execution>
+            <id>attach-javadocs</id>
+            <goals>
+              <goal>jar</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+    </plugins>
+  </build>
+
+</project>
