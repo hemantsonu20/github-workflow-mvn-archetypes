@@ -7,7 +7,7 @@
   <packaging>maven-archetype</packaging>
 
   <name>github-workflow-java-archetype</name>
-  <description>Maven Archetype to generate a java based projects with configured github workflow</description>
+  <description>Maven Archetype to generate a java based project with configured github workflow</description>
   <url>https://github.com/hemantsonu20/github-workflow-mvn-archetypes</url>
 
   <parent>
@@ -16,6 +16,5 @@
     <version>1.0.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
-
 
 </project>
