@@ -5,7 +5,7 @@
 
   <groupId>com.github.hemantsonu20</groupId>
   <artifactId>github-workflow-mvn-archetypes</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>github-workflow-mvn-archetypes</name>
@@ -28,7 +28,7 @@
   <scm>
     <connection>scm:git:git@github.com:hemantsonu20/github-workflow-mvn-archetypes.git</connection>
     <developerConnection>scm:git:git@github.com:hemantsonu20/github-workflow-mvn-archetypes.git</developerConnection>
-    <tag>1.0.0</tag>
+    <tag>${project.version}</tag>
     <url>https://github.com/hemantsonu20/github-workflow-mvn-archetypes</url>
   </scm>
 
