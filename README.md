@@ -5,7 +5,7 @@ Maven Archetypes for java based projects with configured github workflow.
 
 * [github-workflow-java-archetype](#github-workflow-java-archetype) 
 
-### github-workflow-java-archetype
+## github-workflow-java-archetype
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.hemantsonu20/github-workflow-java-archetype.svg?label=Maven%20Central&color=brightgreen)](https://search.maven.org/search?q=g:%22com.github.hemantsonu20%22%20AND%20a:%22github-workflow-java-archetype%22)
 
 **Description:**  
