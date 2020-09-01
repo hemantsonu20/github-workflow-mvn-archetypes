@@ -18,14 +18,14 @@ A maven archetype which generates a java / maven project. It has configured gith
 **How to use:**  
 Open a terminal, goto folder where you want to generate the project and run below command.
 ```
-mvn archetype:generate -DarchetypeGroupId=com.github.hemantsonu20 -DarchetypeArtifactId=github-workflow-java-archetype -DarchetypeVersion=1.0.0
+mvn archetype:generate -DarchetypeGroupId=com.github.hemantsonu20 -DarchetypeArtifactId=github-workflow-java-archetype -DarchetypeVersion=1.0.1
 ```
 When asked provide `groupId`, `artifactId`, `package`, `GithubOrgOrAccount` (your github org name or username).  
 You can also provide these options on command line directly as:
 ```
 mvn archetype:generate -DarchetypeGroupId=com.github.hemantsonu20 \
                        -DarchetypeArtifactId=github-workflow-java-archetype \
-                       -DarchetypeVersion=1.0.0 \
+                       -DarchetypeVersion=1.0.1 \
                        -DgroupId=com.example \
                        -DartifactId=demo \
                        -DGithubOrgOrAccount=YourGithubOrgOrAccount
