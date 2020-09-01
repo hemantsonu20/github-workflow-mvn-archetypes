@@ -21,4 +21,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: ./mvnw -B clean install
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        ./mvnw -B clean install
