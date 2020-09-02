@@ -31,5 +31,8 @@ mvn archetype:generate -DarchetypeGroupId=com.github.hemantsonu20 \
                        -DGithubOrgOrAccount=YourGithubOrgOrAccount
 ```
 
-# License
-[Apache-2.0 License](/LICENSE)
+## Contributing
+[See Contributing Guidelines](/CONTRIBUTING.md)
+
+## License
+[Apache License Version 2.0](/LICENSE)
